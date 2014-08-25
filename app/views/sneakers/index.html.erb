@@ -1,0 +1,29 @@
+<h1>Sneakerbook</h1>
+
+<table class="container">
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Picture</th>
+    <th>Designer</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sneakers.each do |sneaker| %>
+  <tr>
+    <td><%= sneaker.name %></td>
+    <td><%= sneaker.description %></td>
+    <td><img style="width: 50px;" src="<%= sneaker.picture %>" /></td>
+    <td><%= sneaker.designer %></td>
+    <td><%= link_to 'Show', sneaker %></td>
+    <td><%= link_to 'Edit', edit_sneaker_path(sneaker) %></td>
+    <td><%= link_to 'Destroy', sneaker, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sneaker', new_sneaker_path %>
