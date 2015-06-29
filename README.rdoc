@@ -1,5 +1,5 @@
 Image-based Rails application for sneaker fanatics to upload pictures of sneakers. Allows for commenting and deleting.
 
-Future updates will include setting up with a virtual database, giving a front-end facelift, and creating a sophisticated login system with more options, such as Admin privileges. 
+Future updates will include setting up with a functioning database, giving a front-end facelift, and creating a sophisticated login system with more options, such as Admin privileges. 
 
 
